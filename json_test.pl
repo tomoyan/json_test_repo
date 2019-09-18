@@ -11,8 +11,6 @@ my $ua = LWP::UserAgent->new;
 my $url = 'https://jsonplaceholder.typicode.com/users/1';
 # GET request
 my $req = HTTP::Request->new( GET => $url );
-# $req->content_type('application/json');
-# $req->authorization_basic("admin", "secret");
 
 # Pass request to the user agent and get a response back
 my $res = $ua->request( $req );
